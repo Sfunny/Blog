@@ -1,0 +1,63 @@
+html
+    head
+        title test
+        meta(
+        http-equiv="content-Type"
+        content="text/html;charset=gb2312"
+        )
+        meta(
+        http-equiv="X-UA-Compatible"
+        content="IE=9;IE=8;IE=7;IE=EDGE"
+        )
+        meta(
+        http-equiv="pragma"
+        content="no-cache"
+        )
+        meta(
+        http-equiv="Cache-Control"
+        content="no-cache，must-revalidate"
+        )
+        meta(
+        http-equiv="expires"
+        content="0"
+        )
+        link(
+        href="./../layui/css/layui.css"
+        rel="stylesheet"
+        type='text/css'
+        )
+        link(
+        href="./../font-awesome-4.7.0/css/font-awesome.css"
+        rel="stylesheet"
+        type='text/css'
+        )
+        link(
+        href="./../stylesheets/backstage/labelManagement.css"
+        rel="stylesheet"
+        type='text/css'
+        )
+        script(src="./../layui/layui.js")
+        script(src="./../javascripts/lib/jquery-3.3.1.min.js")
+        script(src="./../javascripts/utils/MyUtils.js")
+        script(
+        src='./../javascripts/backstage/categoryManagement.js'
+        )
+    body
+        div(id="toolbar" style="display:none")
+            div(class="layui-form-item")
+                label(class="layui-form-label") 类别:
+                input(id="categoryName" class="layui-input" style="width:38%;display: inline-block;")
+                button(class="layui-btn layui-btn-radius layui-btn-normal" lay-event="find" style="margin-left: 10px;") 查询
+                button(class="layui-btn layui-btn-radius layui-btn-warm" lay-event="add") 添加分类
+                button(class="layui-btn layui-btn-radius layui-btn-danger" lay-event="del") 批量删除分类
+        table(id="demo" lay-filter="test")
+        <script type="text/html" id="titleTpl">
+        //<a class="p-btn p-btn-link" lay-event="see">查看</a>
+        <a class="p-btn p-btn-link" lay-event="edit">编辑</a>
+        <a class="p-btn p-btn-link" lay-event="del">删除</a>
+        </script>
+        div(id="addLabel" style="display:none")
+            div(class="layui-form-item" style="padding-left: 10%;padding-top: 10px;")
+                label(class="layui-form-label") 分类名称:
+                input(id="Name" class="layui-input" style="width:38%;display: inline-block;")
+

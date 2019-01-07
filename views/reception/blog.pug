@@ -1,0 +1,81 @@
+html
+    head
+        title test
+        meta(
+        http-equiv="content-Type"
+        content="text/html;charset=gb2312"
+        )
+        meta(
+        http-equiv="X-UA-Compatible"
+        content="IE=9;IE=8;IE=7;IE=EDGE"
+        )
+        meta(
+        http-equiv="pragma"
+        content="no-cache"
+        )
+        meta(
+        http-equiv="Cache-Control"
+        content="no-cache，must-revalidate"
+        )
+        meta(
+        http-equiv="expires"
+        content="0"
+        )
+        link(
+        href="./../layui/css/layui.css"
+        rel="stylesheet"
+        type='text/css'
+        )
+        link(
+        href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        type='text/css'
+        )
+        link(
+        href="./../stylesheets/reception/blog.css"
+        rel="stylesheet"
+        type='text/css'
+        )
+        script(src="./../layui/layui.js")
+        script(src="./../javascripts/lib/jquery-3.3.1.min.js")
+        script(src="./../javascripts/utils/MyUtils.js")
+        script(
+        src='./../javascripts/reception/blog.js'
+        )
+    body
+        div(class='layui-row')
+            div(class='layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2 s_left')
+                div(class='s_Home')
+                    h1 <i class="fa fa-home" aria-hidden="true"></i>Home
+                div(class='s_introduce')
+                    img(
+                    class="QQImg"
+                    src="http://q2.qlogo.cn/headimg_dl?bs=469960690&dst_uin=469960690&dst_uin=469960690&;dst_uin=469960690&spec=100&url_enc=0&referer=bu_interface&term_type=PC"
+                    )
+                    h3(class='s_website') test
+                    h3(class='s_autograph') test
+                    h3(class='s_address') test
+                div(class='s_contact')
+                    <i class="fa fa-qq" aria-hidden="true"></i>
+                ul
+                    li
+                        dl
+                            dt() 导航
+                            dd <i class="fa fa-circle-o fa-fw"></i> 首页
+                    li
+                        dl
+                            dt 组成
+                            dd <i class="fa fa-fw fa-lemon-o"></i> 分类
+                            dd <i class="fa fa-fw fa-smile-o"></i> 页面
+            div(class='layui-col-xs10 layui-col-sm10 layui-col-md10 layui-col-lg10 s_right')
+                div(class='s_right_head layui-row')
+                    div(class='layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2') <i class="fa fa-dedent"></i>
+                    div(class='layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2')
+                        h2 首页
+                    div(class='layui-col-xs8 layui-col-sm8 layui-col-md8 layui-col-lg8')
+                        div() <i class="fa fa-dedent"></i>
+                div(class='s_right_body')
+                    div(class='layui-row')
+                        h2(class='s_right_body_title') Blog
+                        div(class='layui-col-xs9 layui-col-sm9 layui-col-md9 layui-col-lg9 s_right_Blog_main' id="s_right_Blog_main")
+                        div(class='layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2')

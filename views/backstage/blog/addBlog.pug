@@ -1,0 +1,72 @@
+html
+    head
+        title test
+        meta(
+        http-equiv="content-Type"
+        content="text/html;charset=gb2312"
+        )
+        meta(
+        http-equiv="X-UA-Compatible"
+        content="IE=9;IE=8;IE=7;IE=EDGE"
+        )
+        meta(
+        http-equiv="pragma"
+        content="no-cache"
+        )
+        meta(
+        http-equiv="Cache-Control"
+        content="no-cache，must-revalidate"
+        )
+        meta(
+        name="referrer"
+        content="no-referrer"
+        )
+        meta(
+        http-equiv="expires"
+        content="0"
+        )
+        link(
+        href="./../../layui/css/layui.css"
+        rel="stylesheet"
+        type='text/css'
+        )
+        link(
+        href="./../../font-awesome-4.7.0/css/font-awesome.css"
+        rel="stylesheet"
+        type='text/css'
+        )
+        link(
+        href="./../../stylesheets/backstage/labelManagement.css"
+        rel="stylesheet"
+        type='text/css'
+        )
+        link(
+        href="./../../stylesheets/lib/formSelects-v4.css"
+        rel="stylesheet"
+        type='text/css'
+        )
+        script(src="./../../layui/layui.js")
+        script(src="./../../javascripts/lib/jquery-3.3.1.min.js")
+        script(src="./../../javascripts/utils/MyUtils.js")
+        script(
+        src='./../../javascripts/backstage/blog/addBlog.js'
+        )
+    body
+        div(id="addBlog")
+            div(class="layui-form-item" id="imgs" style="padding-left: 10%;padding-top: 10px;padding-right: 10%;")
+                div(class="layui-upload-drag" id="uploadImg")
+                    i(class="layui-icon")
+                    p() 点击上传，或将文件拖拽到此处
+            div(class="layui-form-item" style="padding-left: 10%;padding-top: 10px;padding-right: 10%;")
+                input(id="Name" class="layui-input" style="display: inline-block;" placeholder="Blog名称")
+            div(class="layui-form-item" style="padding-left: 10%;padding-top: 10px;padding-right: 10%;")
+                select(xm-select="xmLabel")
+            div(class="layui-form-item" style="padding-left: 10%;padding-top: 10px;padding-right: 10%;")
+                select(xm-select="xmCategory")
+            div(class="layui-form-item" style="padding-left: 10%;padding-top: 10px;padding-right: 10%;")
+                textarea(id="layeditDemo")
+            div(class="layui-form-item" style="padding-left: 10%;padding-top: 10px;padding-right: 10%;text-align: center;")
+               button(class="layui-btn layui-btn-lg layui-btn-radius layui-btn-normal" id="yes")  确定
+               button(class="layui-btn layui-btn-lg layui-btn-radius layui-btn-warm" id="no")  取消
+
+

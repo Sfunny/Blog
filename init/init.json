@@ -1,0 +1,23 @@
+{
+  "db": "mongodb://localhost/Blog",
+  "admin": [
+    {
+      "userName": "admin",
+      "passWord": "admin"
+    }
+  ],
+  "menu": [
+    {
+      "name": "类别管理",
+      "url": "backstage/category"
+    },
+    {
+      "name": "标签管理",
+      "url": "backstage/label"
+    },
+    {
+      "name": "Blog管理",
+      "url": "backstage/blog"
+    }
+  ]
+}
