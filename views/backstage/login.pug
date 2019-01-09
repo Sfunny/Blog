@@ -38,24 +38,33 @@ html
         )
         script(src="./../layui/layui.js")
         script(src="./../javascripts/lib/jquery-3.3.1.min.js")
+        script(src="./../javascripts/lib/stopExecutionOnTimeout.js?t=1")
+        script(src="./../javascripts/lib/Particleground.js")
+        script(src="./../javascripts/lib/Treatment.js")
         script(src="./../javascripts/utils/MyUtils.js")
         script(src="./../javascripts/backstage/login.js")
     body(class='layui-row')
-        div(class='layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-lg4')
-            div(style='width: 100%;height: 100%;')
-        div(class='s_login layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-lg4')
-            div(class='s_login_div')
-                h1 后台登录
-                    div(class='layui-form-item s_login_div_item')
-                        label(class='layui-form-label') 用户名:
-                        div(class="layui-input-block")
-                            input(type="text" id="userName" name="userName" lay-verify="title" autocomplete="off" placeholder="请输入用户名" class="layui-input")
-                    div(class='layui-form-item s_login_div_item')
-                        label(class='layui-form-label') 密  码:
-                        div(class="layui-input-block")
-                            input(type="password" id="passWord"  name="passWord" lay-verify="title" autocomplete="off" placeholder="请输入密码" class="layui-input")
-                    div(class='layui-form-item')
-                        button(class='layui-btn layui-btn-normal'  id="s_login") 登录
-        div(class='layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-lg4')
-            div(style='width: 100%;height: 100%;')
+        div(class='login')
+            div(class='login_title')
+                span() 管理员登录
+            div(class='login_fields')
+                div(class='login_fields__user')
+                    div(class='icon')
+                        img(alt="" src='images/user_icon_copy.png')
+                    input(name="userName" id="userName" placeholder='用户名'  type='text'  value="")
+                    div(class='validation')
+                        img(alt="" src='images/tick.png')
+                div(class='login_fields__password')
+                    div(class='icon')
+                        img(alt="" src='images/lock_icon_copy.png')
+                    input(name="passWord" id="passWord" placeholder='密码' type='text')
+                    div(class='validation')
+                        img(alt="" src='images/tick.png')
+                div(class='login_fields__submit')
+                    button(type='button' class='color_changing' id="s_login"
+                    style="background-color: transparent;color: #ffff;padding: 10px 30px;border: 2px solid beige;border-radius: 25px;"
+                    ) 登录
+                div(class='success')
+                div(class='disclaimer')
+                    p() 欢迎登陆后台管理系统
 
