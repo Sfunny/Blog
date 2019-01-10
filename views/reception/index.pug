@@ -43,39 +43,36 @@ html
         src='./javascripts/reception/index.js'
         )
     body
-        div(class='layui-row')
-            div(class='layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2 s_left')
-                div(class='s_Home')
-                    h1 <i class="fa fa-home" aria-hidden="true"></i>Home
-                div(class='s_introduce')
-                    img(
-                    class="QQImg"
-                    src="http://q2.qlogo.cn/headimg_dl?bs=469960690&dst_uin=469960690&dst_uin=469960690&;dst_uin=469960690&spec=100&url_enc=0&referer=bu_interface&term_type=PC"
-                    )
-                    h3(class='s_website') test
-                    h3(class='s_autograph') test
-                    h3(class='s_address') test
-                div(class='s_contact')
-                    <i class="fa fa-qq" aria-hidden="true"></i>
-                ul
-                    li
-                        dl
-                            dt() 导航
-                            dd <i class="fa fa-circle-o fa-fw"></i> 首页
-                    li
-                        dl
-                            dt 组成
-                            dd <i class="fa fa-fw fa-lemon-o"></i> 分类
-                            dd <i class="fa fa-fw fa-smile-o"></i> 页面
-            div(class='layui-col-xs10 layui-col-sm10 layui-col-md10 layui-col-lg10 s_right')
-                div(class='s_right_head layui-row')
-                    div(class='layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2') <i class="fa fa-dedent"></i>
-                    div(class='layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2')
-                        h2 首页
-                    div(class='layui-col-xs8 layui-col-sm8 layui-col-md8 layui-col-lg8')
-                        div() <i class="fa fa-dedent"></i>
-                div(class='s_right_body')
-                    div(class='layui-row')
-                        h2(class='s_right_body_title') 首页
-                        div(class='layui-col-xs9 layui-col-sm9 layui-col-md9 layui-col-lg9 s_right_body_main' id="s_right_body_main")
-                        div(class='layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2')
+        div(class=' s_left')
+            div(class='s_Home')
+                h1 <i class="fa fa-home" aria-hidden="true"></i>Home
+            div(class='s_introduce')
+                img(
+                class="QQImg"
+                src="http://q2.qlogo.cn/headimg_dl?bs=469960690&dst_uin=469960690&dst_uin=469960690&;dst_uin=469960690&spec=100&url_enc=0&referer=bu_interface&term_type=PC"
+                )
+                h3(class='s_website') test
+                h3(class='s_autograph') test
+                h3(class='s_address') test
+            div(class='s_contact')
+                <i class="fa fa-qq" aria-hidden="true"></i>
+            ul
+                li
+                    dl
+                        dt() 导航
+                        dd <i class="fa fa-circle-o fa-fw"></i> 首页
+                li
+                    dl
+                        dt 组成
+                        dd <i class="fa fa-fw fa-lemon-o"></i> 分类
+                        dd <i class="fa fa-fw fa-smile-o"></i> 页面
+        div(class='s_right')
+            div(class='s_right_head')
+                div(class='')
+                    h2 首页
+            div(class='s_right_body')
+                h2(class='s_right_body_title') 首页
+                div(class='s_right_body_main' id="s_right_body_main")
+                    div(id="blog" class="blog")
+                    div(id="page" class="page")
+                div(class='s_right_body_rich')
